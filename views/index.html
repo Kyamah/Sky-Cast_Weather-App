@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Ready</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/playstore.png" type="image/x-icon">
+
+    <!-- box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Logo & Nav -->
+    <div class="hlogo">
+        <img src="/playstore.png" alt="">
+    </div>
+    <div class="headerw">
+        <h2>Weather Ready</h2>
+    </div>
+
+    <section class="defh">
+        <div class="defh-cont">
+            <h3>Hello, this is</h3>
+            <h1>Weather Ready</h1>
+            <p>Get real-time updates of the weather status of your preferred location</p> <br> <br>
+
+            <input type="text" id="city" placeholder="Enter city name">
+            <button type="button" onclick="fetchWeather()">Search</button>
+
+            <div id="errorMessage" class="hidden"></div>
+        </div>
+        <div id="weatherInfo" class="defh-out">
+            <h3 id="cityName">Nairobi, KE</h3>
+            <div class="info-ar">
+                <div class="info-co">
+                    <i class='bx bx-wind' ></i>
+                    <h4 class="hum">Wind Speed</h4>
+                    <div class="in-values">
+                        <h5 id="windSpeed">2.41</h5>
+                        <span>m/s</span>
+                    </div>
+                </div>
+                <div class="info-co">
+                    <i class='bx bx-cloud' ></i>
+                    <h4 class="hum">Weather</h4>
+                    <div class="in-values">
+                        <h5 id="description">Scattered Clouds</h5>
+                    </div>
+                </div>
+                <div class="info-co">
+                    <i class='bx bxs-droplet-half' ></i>
+                    <h4 class="hum">Humidity</h4>
+                    <div class="in-values">
+                        <h5 id="humidity">40</h5>
+                        <span>%</span>
+                    </div>
+                </div>
+                <div class="info-co">
+                    <i class='bx bxs-thermometer'></i>
+                    <h4 class="hum">Temperature</h4>
+                    <div class="in-values">
+                        <h5 id="temperature">35.33</h5>
+                        <span>°C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<div>
+        <h2>Welcome To Weather Ready</h2>
+        <p>Get real-time updates of the weather status of your preferred location</p>
+
+        <input type="text" id="city" placeholder="Enter city name">
+        <button type="button" onclick="fetchWeather()">Search</button>
+    </div>-->
+
+    <!-- Error message section -->
+    <!--<div id="errorMessage" class="hidden"></div>-->
+
+    <!-- Weather information section -->
+    <!--<div id="weatherInfo" class="hidden">
+        <h3 id="cityName"></h3>
+        <div id="temperature"></div>
+        <div id="description"></div>
+        <div id="humidity"></div>
+        <div id="windSpeed"></div>
+    </div>-->
+
+    <!-- JavaScript -->
+    <script src="/app.js"></script>
+</body>
+</html>
